@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2748BF311501B1CC0091BFCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF301501B1CC0091BFCF /* UIKit.framework */; };
+		2748BF331501B1CC0091BFCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF321501B1CC0091BFCF /* Foundation.framework */; };
+		2748BF351501B1CC0091BFCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF341501B1CC0091BFCF /* CoreGraphics.framework */; };
+		2748BF371501B1CC0091BFCF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF361501B1CC0091BFCF /* CoreData.framework */; };
+		2748BF3D1501B1CC0091BFCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */; };
+		2748BF3F1501B1CC0091BFCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF3E1501B1CC0091BFCF /* main.m */; };
+		2748BF431501B1CC0091BFCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF421501B1CC0091BFCF /* AppDelegate.m */; };
+		2748BF461501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */; };
+		2748BF491501B1CC0091BFCF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */; };
+		2748BF4C1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */; };
+		2748BF4F1501B1CC0091BFCF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF4E1501B1CC0091BFCF /* MasterViewController.m */; };
+		2748BF521501B1CC0091BFCF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF511501B1CC0091BFCF /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TunePad Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2748BF301501B1CC0091BFCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2748BF321501B1CC0091BFCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2748BF341501B1CC0091BFCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2748BF361501B1CC0091BFCF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2748BF3A1501B1CC0091BFCF /* TunePad Pro-Info.plist */ = {isa = PBXFileReference; path = "TunePad Pro-Info.plist"; sourceTree = "<group>"; };
+		2748BF3C1501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2748BF3E1501B1CC0091BFCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2748BF401501B1CC0091BFCF /* TunePad Pro-Prefix.pch */ = {isa = PBXFileReference; path = "TunePad Pro-Prefix.pch"; sourceTree = "<group>"; };
+		2748BF411501B1CC0091BFCF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2748BF421501B1CC0091BFCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2748BF451501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2748BF481501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TunePad_Pro.xcdatamodel; sourceTree = "<group>"; };
+		2748BF4D1501B1CC0091BFCF /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		2748BF4E1501B1CC0091BFCF /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2748BF501501B1CC0091BFCF /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		2748BF511501B1CC0091BFCF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2748BF291501B1CC0091BFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2748BF311501B1CC0091BFCF /* UIKit.framework in Frameworks */,
+				2748BF331501B1CC0091BFCF /* Foundation.framework in Frameworks */,
+				2748BF351501B1CC0091BFCF /* CoreGraphics.framework in Frameworks */,
+				2748BF371501B1CC0091BFCF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2748BF211501B1CC0091BFCF = {
+			isa = PBXGroup;
+			children = (
+				2748BF381501B1CC0091BFCF /* TunePad Pro */,
+				2748BF2F1501B1CC0091BFCF /* Frameworks */,
+				2748BF2D1501B1CC0091BFCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2748BF2D1501B1CC0091BFCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2748BF2F1501B1CC0091BFCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2748BF301501B1CC0091BFCF /* UIKit.framework */,
+				2748BF321501B1CC0091BFCF /* Foundation.framework */,
+				2748BF341501B1CC0091BFCF /* CoreGraphics.framework */,
+				2748BF361501B1CC0091BFCF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2748BF381501B1CC0091BFCF /* TunePad Pro */ = {
+			isa = PBXGroup;
+			children = (
+				2748BF411501B1CC0091BFCF /* AppDelegate.h */,
+				2748BF421501B1CC0091BFCF /* AppDelegate.m */,
+				2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */,
+				2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */,
+				2748BF4D1501B1CC0091BFCF /* MasterViewController.h */,
+				2748BF4E1501B1CC0091BFCF /* MasterViewController.m */,
+				2748BF501501B1CC0091BFCF /* DetailViewController.h */,
+				2748BF511501B1CC0091BFCF /* DetailViewController.m */,
+				2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */,
+				2748BF391501B1CC0091BFCF /* Supporting Files */,
+			);
+			path = "TunePad Pro";
+			sourceTree = "<group>";
+		};
+		2748BF391501B1CC0091BFCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2748BF3A1501B1CC0091BFCF /* TunePad Pro-Info.plist */,
+				2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */,
+				2748BF3E1501B1CC0091BFCF /* main.m */,
+				2748BF401501B1CC0091BFCF /* TunePad Pro-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2748BF2B1501B1CC0091BFCF /* TunePad Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2748BF551501B1CC0091BFCF /* Build configuration list for PBXNativeTarget "TunePad Pro" */;
+			buildPhases = (
+				2748BF281501B1CC0091BFCF /* Sources */,
+				2748BF291501B1CC0091BFCF /* Frameworks */,
+				2748BF2A1501B1CC0091BFCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TunePad Pro";
+			productName = "TunePad Pro";
+			productReference = 2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2748BF231501B1CC0091BFCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2748BF261501B1CC0091BFCF /* Build configuration list for PBXProject "TunePad Pro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2748BF211501B1CC0091BFCF;
+			productRefGroup = 2748BF2D1501B1CC0091BFCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2748BF2B1501B1CC0091BFCF /* TunePad Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2748BF2A1501B1CC0091BFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2748BF3D1501B1CC0091BFCF /* InfoPlist.strings in Resources */,
+				2748BF461501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard in Resources */,
+				2748BF491501B1CC0091BFCF /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2748BF281501B1CC0091BFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2748BF3F1501B1CC0091BFCF /* main.m in Sources */,
+				2748BF431501B1CC0091BFCF /* AppDelegate.m in Sources */,
+				2748BF4C1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld in Sources */,
+				2748BF4F1501B1CC0091BFCF /* MasterViewController.m in Sources */,
+				2748BF521501B1CC0091BFCF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2748BF3C1501B1CC0091BFCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2748BF451501B1CC0091BFCF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2748BF481501B1CC0091BFCF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2748BF531501B1CC0091BFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2748BF541501B1CC0091BFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2748BF561501B1CC0091BFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TunePad Pro/TunePad Pro-Prefix.pch";
+				INFOPLIST_FILE = "TunePad Pro/TunePad Pro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2748BF571501B1CC0091BFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TunePad Pro/TunePad Pro-Prefix.pch";
+				INFOPLIST_FILE = "TunePad Pro/TunePad Pro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2748BF261501B1CC0091BFCF /* Build configuration list for PBXProject "TunePad Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2748BF531501B1CC0091BFCF /* Debug */,
+				2748BF541501B1CC0091BFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2748BF551501B1CC0091BFCF /* Build configuration list for PBXNativeTarget "TunePad Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2748BF561501B1CC0091BFCF /* Debug */,
+				2748BF571501B1CC0091BFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */,
+			);
+			currentVersion = 2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */;
+			path = TunePad_Pro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2748BF231501B1CC0091BFCF /* Project object */;
+}
