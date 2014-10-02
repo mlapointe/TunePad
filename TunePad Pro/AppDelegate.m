@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
+
 
 @implementation AppDelegate
 
@@ -16,6 +16,9 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+
+@synthesize navigationController = _navigationController;
+@synthesize songListViewController = _songListViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -26,12 +29,33 @@
         splitViewController.delegate = (id)navigationController.topViewController;
         
         UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
-        MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
+        SongListViewController *controller = (SongListViewController *)masterNavigationController.topViewController;
         controller.managedObjectContext = self.managedObjectContext;
     } else {
-        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-        MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
+//        SongListViewController *songListController = [[SongListViewController alloc] initWithStyle:UITableViewStylePlain];
+        
+        NSManagedObjectContext *context = [self managedObjectContext];
+        if (!context) {
+            NSLog(@"No Context in Delegate!");
+        }
+        
+//        self.songListViewController.managedObjectContext = context;
+        
+//        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:songListController];
+//        self.navigationController = navController;
+//        
+//        [self.window addSubview:[navController view]];
+        [self.window makeKeyAndVisible];
+//        
+        
+        
+         //Auto generated stuff
+        
+//        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//        SongListViewController *controller = (SongListViewController *)navigationController.presentedViewController;
+//        controller.managedObjectContext = self.managedObjectContext;
+//        
+//        NSLog(@"managedOBjectContextCreated");
     }
     return YES;
 }
@@ -69,13 +93,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+    //[self saveContext];
 }
 
 - (void)saveContext
 {
     NSError *error = nil;
-    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    NSManagedObjectContext *managedObjectContext = __managedObjectContext;
     if (managedObjectContext != nil)
     {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error])
@@ -139,9 +163,12 @@
         return __persistentStoreCoordinator;
     }
     
+    //Find sqlite database
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"TunePad_Pro.sqlite"];
     
     NSError *error = nil;
+    
+    //Alloc + initialize if not already present
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
     {

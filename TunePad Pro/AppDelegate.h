@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SongListViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,7 +18,11 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-- (void)saveContext;
+@property (strong, nonatomic) UINavigationController *navigationController;
+
+@property (strong, nonatomic) IBOutlet SongListViewController *songListViewController;
+
+//- (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
 @end

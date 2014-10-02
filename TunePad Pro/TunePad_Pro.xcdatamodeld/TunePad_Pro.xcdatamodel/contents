@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Song" representedClassName="Song">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="songSection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SongSection" inverseName="fromSong" inverseEntity="SongSection" syncable="YES"/>
+    </entity>
+    <entity name="SongSection" representedClassName="SongSection" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="chords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lyrics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sectionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fromSong" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Song" inverseName="songSection" inverseEntity="Song" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Song" positionX="261" positionY="180" width="128" height="105"/>
+        <element name="SongSection" positionX="432" positionY="153" width="128" height="135"/>
     </elements>
 </model>
