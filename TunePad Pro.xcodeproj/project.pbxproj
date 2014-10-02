@@ -1,420 +1,1293 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		27095846153B3A2900D8E76E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27095845153B3A2900D8E76E /* CoreFoundation.framework */; };
-		27284E50154BB35F0056E188 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27284E4F154BB35F0056E188 /* MessageUI.framework */; };
-		273A33C91537599200B871E8 /* green-play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 273A33C81537599200B871E8 /* green-play-button.png */; };
-		273A33CC1537625400B871E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273A33CA1537620900B871E8 /* AVFoundation.framework */; };
-		2748BF311501B1CC0091BFCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF301501B1CC0091BFCF /* UIKit.framework */; };
-		2748BF331501B1CC0091BFCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF321501B1CC0091BFCF /* Foundation.framework */; };
-		2748BF351501B1CC0091BFCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF341501B1CC0091BFCF /* CoreGraphics.framework */; };
-		2748BF371501B1CC0091BFCF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748BF361501B1CC0091BFCF /* CoreData.framework */; };
-		2748BF3D1501B1CC0091BFCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */; };
-		2748BF3F1501B1CC0091BFCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF3E1501B1CC0091BFCF /* main.m */; };
-		2748BF431501B1CC0091BFCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF421501B1CC0091BFCF /* AppDelegate.m */; };
-		2748BF461501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */; };
-		2748BF491501B1CC0091BFCF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */; };
-		2748BF4C1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */; };
-		2748BF4F1501B1CC0091BFCF /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF4E1501B1CC0091BFCF /* SongListViewController.m */; };
-		2748BF521501B1CC0091BFCF /* SectionEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748BF511501B1CC0091BFCF /* SectionEditViewController.m */; };
-		274EEEA5152AAE59004A2224 /* microphone_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EEEA4152AAE59004A2224 /* microphone_icon.jpg */; };
-		274EEEA9152AB739004A2224 /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EEEA8152AB739004A2224 /* RecordView.m */; };
-		274EEEAB152B4D26004A2224 /* RecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274EEEAA152B4D26004A2224 /* RecordView.xib */; };
-		275B8878153F2354004CFEBB /* matteStopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 275B8875153F2354004CFEBB /* matteStopButton.png */; };
-		275B8879153F2354004CFEBB /* mattePlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 275B8876153F2354004CFEBB /* mattePlayButton.png */; };
-		275B887A153F2354004CFEBB /* matteRecordIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 275B8877153F2354004CFEBB /* matteRecordIcon.png */; };
-		277B65E9150267DB007CD5C9 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B65E8150267DB007CD5C9 /* MainMenuViewController.m */; };
-		2797FCF415466258007F0D16 /* Tunepad Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2797FCF315466258007F0D16 /* Tunepad Icon.png */; };
-		27AE87351516A162004A817E /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE87341516A161004A817E /* EditViewController.m */; };
-		27C0887A154B4F520078DAB1 /* parchment.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C08879154B4F520078DAB1 /* parchment.png */; };
-		27D23BF6151E5AE0005A7A77 /* SongSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D23BF5151E5AE0005A7A77 /* SongSection.m */; };
-		27FDDDBF154C3D3400B6FA0D /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDDDBE154C3D3400B6FA0D /* Song.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		27095845153B3A2900D8E76E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		27284E4F154BB35F0056E188 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		273A33C81537599200B871E8 /* green-play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-play-button.png"; sourceTree = "<group>"; };
-		273A33CA1537620900B871E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TunePad Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2748BF301501B1CC0091BFCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2748BF321501B1CC0091BFCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2748BF341501B1CC0091BFCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2748BF361501B1CC0091BFCF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2748BF3A1501B1CC0091BFCF /* TunePad Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TunePad Pro-Info.plist"; sourceTree = "<group>"; };
-		2748BF3C1501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2748BF3E1501B1CC0091BFCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2748BF401501B1CC0091BFCF /* TunePad Pro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TunePad Pro-Prefix.pch"; sourceTree = "<group>"; };
-		2748BF411501B1CC0091BFCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2748BF421501B1CC0091BFCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2748BF451501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		2748BF481501B1CC0091BFCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TunePad_Pro.xcdatamodel; sourceTree = "<group>"; };
-		2748BF4D1501B1CC0091BFCF /* SongListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListViewController.h; sourceTree = "<group>"; };
-		2748BF4E1501B1CC0091BFCF /* SongListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
-		2748BF501501B1CC0091BFCF /* SectionEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionEditViewController.h; sourceTree = "<group>"; };
-		2748BF511501B1CC0091BFCF /* SectionEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionEditViewController.m; sourceTree = "<group>"; };
-		274EEEA4152AAE59004A2224 /* microphone_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microphone_icon.jpg; sourceTree = "<group>"; };
-		274EEEA7152AB739004A2224 /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
-		274EEEA8152AB739004A2224 /* RecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordView.m; sourceTree = "<group>"; };
-		274EEEAA152B4D26004A2224 /* RecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordView.xib; sourceTree = "<group>"; };
-		275B8875153F2354004CFEBB /* matteStopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matteStopButton.png; sourceTree = "<group>"; };
-		275B8876153F2354004CFEBB /* mattePlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mattePlayButton.png; sourceTree = "<group>"; };
-		275B8877153F2354004CFEBB /* matteRecordIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matteRecordIcon.png; sourceTree = "<group>"; };
-		277B65E7150267DB007CD5C9 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		277B65E8150267DB007CD5C9 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		2797FCF315466258007F0D16 /* Tunepad Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tunepad Icon.png"; path = "../Tunepad Icon.png"; sourceTree = "<group>"; };
-		27AE87331516A161004A817E /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
-		27AE87341516A161004A817E /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
-		27C08879154B4F520078DAB1 /* parchment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parchment.png; sourceTree = "<group>"; };
-		27D23BF4151E5AE0005A7A77 /* SongSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongSection.h; sourceTree = "<group>"; };
-		27D23BF5151E5AE0005A7A77 /* SongSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongSection.m; sourceTree = "<group>"; };
-		27FDDDBD154C3D3400B6FA0D /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = SOURCE_ROOT; };
-		27FDDDBE154C3D3400B6FA0D /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2748BF291501B1CC0091BFCF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27284E50154BB35F0056E188 /* MessageUI.framework in Frameworks */,
-				273A33CC1537625400B871E8 /* AVFoundation.framework in Frameworks */,
-				2748BF311501B1CC0091BFCF /* UIKit.framework in Frameworks */,
-				27095846153B3A2900D8E76E /* CoreFoundation.framework in Frameworks */,
-				2748BF331501B1CC0091BFCF /* Foundation.framework in Frameworks */,
-				2748BF351501B1CC0091BFCF /* CoreGraphics.framework in Frameworks */,
-				2748BF371501B1CC0091BFCF /* CoreData.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2748BF211501B1CC0091BFCF = {
-			isa = PBXGroup;
-			children = (
-				2748BF381501B1CC0091BFCF /* TunePad Pro */,
-				2748BF2F1501B1CC0091BFCF /* Frameworks */,
-				2748BF2D1501B1CC0091BFCF /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		2748BF2D1501B1CC0091BFCF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2748BF2F1501B1CC0091BFCF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				27284E4F154BB35F0056E188 /* MessageUI.framework */,
-				27095845153B3A2900D8E76E /* CoreFoundation.framework */,
-				273A33CA1537620900B871E8 /* AVFoundation.framework */,
-				2748BF301501B1CC0091BFCF /* UIKit.framework */,
-				2748BF321501B1CC0091BFCF /* Foundation.framework */,
-				2748BF341501B1CC0091BFCF /* CoreGraphics.framework */,
-				2748BF361501B1CC0091BFCF /* CoreData.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2748BF381501B1CC0091BFCF /* TunePad Pro */ = {
-			isa = PBXGroup;
-			children = (
-				2748BF411501B1CC0091BFCF /* AppDelegate.h */,
-				2748BF421501B1CC0091BFCF /* AppDelegate.m */,
-				2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */,
-				2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */,
-				277B65E7150267DB007CD5C9 /* MainMenuViewController.h */,
-				277B65E8150267DB007CD5C9 /* MainMenuViewController.m */,
-				2748BF4D1501B1CC0091BFCF /* SongListViewController.h */,
-				2748BF4E1501B1CC0091BFCF /* SongListViewController.m */,
-				27AE87331516A161004A817E /* EditViewController.h */,
-				27AE87341516A161004A817E /* EditViewController.m */,
-				274EEEA7152AB739004A2224 /* RecordView.h */,
-				274EEEA8152AB739004A2224 /* RecordView.m */,
-				2748BF501501B1CC0091BFCF /* SectionEditViewController.h */,
-				2748BF511501B1CC0091BFCF /* SectionEditViewController.m */,
-				277B65D0150263B4007CD5C9 /* CoreData */,
-				2748BF391501B1CC0091BFCF /* Supporting Files */,
-				274EEEAA152B4D26004A2224 /* RecordView.xib */,
-			);
-			path = "TunePad Pro";
-			sourceTree = "<group>";
-		};
-		2748BF391501B1CC0091BFCF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2797FCF315466258007F0D16 /* Tunepad Icon.png */,
-				275B8875153F2354004CFEBB /* matteStopButton.png */,
-				275B8876153F2354004CFEBB /* mattePlayButton.png */,
-				275B8877153F2354004CFEBB /* matteRecordIcon.png */,
-				273A33C81537599200B871E8 /* green-play-button.png */,
-				2748BF3A1501B1CC0091BFCF /* TunePad Pro-Info.plist */,
-				27C08879154B4F520078DAB1 /* parchment.png */,
-				2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */,
-				274EEEA4152AAE59004A2224 /* microphone_icon.jpg */,
-				2748BF3E1501B1CC0091BFCF /* main.m */,
-				2748BF401501B1CC0091BFCF /* TunePad Pro-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		277B65D0150263B4007CD5C9 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */,
-				27D23BF4151E5AE0005A7A77 /* SongSection.h */,
-				27D23BF5151E5AE0005A7A77 /* SongSection.m */,
-				27FDDDBD154C3D3400B6FA0D /* Song.h */,
-				27FDDDBE154C3D3400B6FA0D /* Song.m */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		2748BF2B1501B1CC0091BFCF /* TunePad Pro */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2748BF551501B1CC0091BFCF /* Build configuration list for PBXNativeTarget "TunePad Pro" */;
-			buildPhases = (
-				2748BF281501B1CC0091BFCF /* Sources */,
-				2748BF291501B1CC0091BFCF /* Frameworks */,
-				2748BF2A1501B1CC0091BFCF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TunePad Pro";
-			productName = "TunePad Pro";
-			productReference = 2748BF2C1501B1CC0091BFCF /* TunePad Pro.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		2748BF231501B1CC0091BFCF /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0420;
-				TargetAttributes = {
-					2748BF2B1501B1CC0091BFCF = {
-						DevelopmentTeam = V9JC374P99;
-					};
-				};
-			};
-			buildConfigurationList = 2748BF261501B1CC0091BFCF /* Build configuration list for PBXProject "TunePad Pro" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 2748BF211501B1CC0091BFCF;
-			productRefGroup = 2748BF2D1501B1CC0091BFCF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				2748BF2B1501B1CC0091BFCF /* TunePad Pro */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2748BF2A1501B1CC0091BFCF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2748BF3D1501B1CC0091BFCF /* InfoPlist.strings in Resources */,
-				2748BF461501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard in Resources */,
-				2748BF491501B1CC0091BFCF /* MainStoryboard_iPad.storyboard in Resources */,
-				274EEEA5152AAE59004A2224 /* microphone_icon.jpg in Resources */,
-				274EEEAB152B4D26004A2224 /* RecordView.xib in Resources */,
-				273A33C91537599200B871E8 /* green-play-button.png in Resources */,
-				275B8878153F2354004CFEBB /* matteStopButton.png in Resources */,
-				275B8879153F2354004CFEBB /* mattePlayButton.png in Resources */,
-				275B887A153F2354004CFEBB /* matteRecordIcon.png in Resources */,
-				2797FCF415466258007F0D16 /* Tunepad Icon.png in Resources */,
-				27C0887A154B4F520078DAB1 /* parchment.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2748BF281501B1CC0091BFCF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2748BF3F1501B1CC0091BFCF /* main.m in Sources */,
-				2748BF431501B1CC0091BFCF /* AppDelegate.m in Sources */,
-				2748BF4C1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld in Sources */,
-				2748BF4F1501B1CC0091BFCF /* SongListViewController.m in Sources */,
-				2748BF521501B1CC0091BFCF /* SectionEditViewController.m in Sources */,
-				277B65E9150267DB007CD5C9 /* MainMenuViewController.m in Sources */,
-				27AE87351516A162004A817E /* EditViewController.m in Sources */,
-				27D23BF6151E5AE0005A7A77 /* SongSection.m in Sources */,
-				274EEEA9152AB739004A2224 /* RecordView.m in Sources */,
-				27FDDDBF154C3D3400B6FA0D /* Song.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2748BF3B1501B1CC0091BFCF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2748BF3C1501B1CC0091BFCF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2748BF441501B1CC0091BFCF /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2748BF451501B1CC0091BFCF /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		2748BF471501B1CC0091BFCF /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2748BF481501B1CC0091BFCF /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		2748BF531501B1CC0091BFCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2748BF541501B1CC0091BFCF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2748BF561501B1CC0091BFCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TunePad Pro/TunePad Pro-Prefix.pch";
-				INFOPLIST_FILE = "TunePad Pro/TunePad Pro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		2748BF571501B1CC0091BFCF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TunePad Pro/TunePad Pro-Prefix.pch";
-				INFOPLIST_FILE = "TunePad Pro/TunePad Pro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2748BF261501B1CC0091BFCF /* Build configuration list for PBXProject "TunePad Pro" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2748BF531501B1CC0091BFCF /* Debug */,
-				2748BF541501B1CC0091BFCF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2748BF551501B1CC0091BFCF /* Build configuration list for PBXNativeTarget "TunePad Pro" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2748BF561501B1CC0091BFCF /* Debug */,
-				2748BF571501B1CC0091BFCF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2748BF4A1501B1CC0091BFCF /* TunePad_Pro.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */,
-			);
-			currentVersion = 2748BF4B1501B1CC0091BFCF /* TunePad_Pro.xcdatamodel */;
-			path = TunePad_Pro.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = 2748BF231501B1CC0091BFCF /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>27095845153B3A2900D8E76E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>27095846153B3A2900D8E76E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27095845153B3A2900D8E76E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27284E4F154BB35F0056E188</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MessageUI.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>27284E50154BB35F0056E188</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27284E4F154BB35F0056E188</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>273A33C81537599200B871E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>green-play-button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>273A33C91537599200B871E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>273A33C81537599200B871E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>273A33CA1537620900B871E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>273A33CC1537625400B871E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>273A33CA1537620900B871E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF211501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF381501B1CC0091BFCF</string>
+				<string>2748BF2F1501B1CC0091BFCF</string>
+				<string>2748BF2D1501B1CC0091BFCF</string>
+				<string>ADE86DC4B92EAF59BF44080F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF231501B1CC0091BFCF</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0420</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>2748BF2B1501B1CC0091BFCF</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>V9JC374P99</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2748BF261501B1CC0091BFCF</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>2748BF211501B1CC0091BFCF</string>
+			<key>productRefGroup</key>
+			<string>2748BF2D1501B1CC0091BFCF</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>2748BF2B1501B1CC0091BFCF</string>
+			</array>
+		</dict>
+		<key>2748BF261501B1CC0091BFCF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2748BF531501B1CC0091BFCF</string>
+				<string>2748BF541501B1CC0091BFCF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2748BF281501B1CC0091BFCF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2748BF3F1501B1CC0091BFCF</string>
+				<string>2748BF431501B1CC0091BFCF</string>
+				<string>2748BF4C1501B1CC0091BFCF</string>
+				<string>2748BF4F1501B1CC0091BFCF</string>
+				<string>2748BF521501B1CC0091BFCF</string>
+				<string>277B65E9150267DB007CD5C9</string>
+				<string>27AE87351516A162004A817E</string>
+				<string>27D23BF6151E5AE0005A7A77</string>
+				<string>274EEEA9152AB739004A2224</string>
+				<string>27FDDDBF154C3D3400B6FA0D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2748BF291501B1CC0091BFCF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>27284E50154BB35F0056E188</string>
+				<string>273A33CC1537625400B871E8</string>
+				<string>2748BF311501B1CC0091BFCF</string>
+				<string>27095846153B3A2900D8E76E</string>
+				<string>2748BF331501B1CC0091BFCF</string>
+				<string>2748BF351501B1CC0091BFCF</string>
+				<string>2748BF371501B1CC0091BFCF</string>
+				<string>42F6C879BE2FADC32355E0DE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2748BF2A1501B1CC0091BFCF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2748BF3D1501B1CC0091BFCF</string>
+				<string>2748BF461501B1CC0091BFCF</string>
+				<string>2748BF491501B1CC0091BFCF</string>
+				<string>274EEEA5152AAE59004A2224</string>
+				<string>274EEEAB152B4D26004A2224</string>
+				<string>273A33C91537599200B871E8</string>
+				<string>275B8878153F2354004CFEBB</string>
+				<string>275B8879153F2354004CFEBB</string>
+				<string>275B887A153F2354004CFEBB</string>
+				<string>2797FCF415466258007F0D16</string>
+				<string>27C0887A154B4F520078DAB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2748BF2B1501B1CC0091BFCF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>2748BF551501B1CC0091BFCF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9B4CEBB9613103156F4EF75F</string>
+				<string>2748BF281501B1CC0091BFCF</string>
+				<string>2748BF291501B1CC0091BFCF</string>
+				<string>2748BF2A1501B1CC0091BFCF</string>
+				<string>9B0BEB0CAF49B7B7F8203AD5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TunePad Pro</string>
+			<key>productName</key>
+			<string>TunePad Pro</string>
+			<key>productReference</key>
+			<string>2748BF2C1501B1CC0091BFCF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>2748BF2C1501B1CC0091BFCF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TunePad Pro.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2748BF2D1501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF2C1501B1CC0091BFCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF2F1501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>27284E4F154BB35F0056E188</string>
+				<string>27095845153B3A2900D8E76E</string>
+				<string>273A33CA1537620900B871E8</string>
+				<string>2748BF301501B1CC0091BFCF</string>
+				<string>2748BF321501B1CC0091BFCF</string>
+				<string>2748BF341501B1CC0091BFCF</string>
+				<string>2748BF361501B1CC0091BFCF</string>
+				<string>31266847D049ACABA0467F72</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF301501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2748BF311501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF301501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF321501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2748BF331501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF321501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF341501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2748BF351501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF341501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF361501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>2748BF371501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF361501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF381501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF411501B1CC0091BFCF</string>
+				<string>2748BF421501B1CC0091BFCF</string>
+				<string>2748BF441501B1CC0091BFCF</string>
+				<string>2748BF471501B1CC0091BFCF</string>
+				<string>277B65E7150267DB007CD5C9</string>
+				<string>277B65E8150267DB007CD5C9</string>
+				<string>2748BF4D1501B1CC0091BFCF</string>
+				<string>2748BF4E1501B1CC0091BFCF</string>
+				<string>27AE87331516A161004A817E</string>
+				<string>27AE87341516A161004A817E</string>
+				<string>274EEEA7152AB739004A2224</string>
+				<string>274EEEA8152AB739004A2224</string>
+				<string>2748BF501501B1CC0091BFCF</string>
+				<string>2748BF511501B1CC0091BFCF</string>
+				<string>277B65D0150263B4007CD5C9</string>
+				<string>2748BF391501B1CC0091BFCF</string>
+				<string>274EEEAA152B4D26004A2224</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TunePad Pro</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF391501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2797FCF315466258007F0D16</string>
+				<string>275B8875153F2354004CFEBB</string>
+				<string>275B8876153F2354004CFEBB</string>
+				<string>275B8877153F2354004CFEBB</string>
+				<string>273A33C81537599200B871E8</string>
+				<string>2748BF3A1501B1CC0091BFCF</string>
+				<string>27C08879154B4F520078DAB1</string>
+				<string>2748BF3B1501B1CC0091BFCF</string>
+				<string>274EEEA4152AAE59004A2224</string>
+				<string>2748BF3E1501B1CC0091BFCF</string>
+				<string>2748BF401501B1CC0091BFCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF3A1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TunePad Pro-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF3B1501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF3C1501B1CC0091BFCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF3C1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF3D1501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF3B1501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF3E1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF3F1501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF3E1501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF401501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TunePad Pro-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF411501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF421501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF431501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF421501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF441501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF451501B1CC0091BFCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF451501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF461501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF441501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF471501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF481501B1CC0091BFCF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF481501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF491501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF471501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF4A1501B1CC0091BFCF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF4B1501B1CC0091BFCF</string>
+			</array>
+			<key>currentVersion</key>
+			<string>2748BF4B1501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>TunePad_Pro.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>2748BF4B1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>TunePad_Pro.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF4C1501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF4A1501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF4D1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SongListViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF4E1501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SongListViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF4F1501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF4E1501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF501501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SectionEditViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF511501B1CC0091BFCF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SectionEditViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2748BF521501B1CC0091BFCF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2748BF511501B1CC0091BFCF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2748BF531501B1CC0091BFCF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2748BF541501B1CC0091BFCF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2748BF551501B1CC0091BFCF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2748BF561501B1CC0091BFCF</string>
+				<string>2748BF571501B1CC0091BFCF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2748BF561501B1CC0091BFCF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3DAF875DA131A0C4FD621B2D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TunePad Pro/TunePad Pro-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TunePad Pro/TunePad Pro-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2748BF571501B1CC0091BFCF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>940BCD9B21EA282030551BBA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TunePad Pro/TunePad Pro-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TunePad Pro/TunePad Pro-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>274EEEA4152AAE59004A2224</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>microphone_icon.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>274EEEA5152AAE59004A2224</key>
+		<dict>
+			<key>fileRef</key>
+			<string>274EEEA4152AAE59004A2224</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>274EEEA7152AB739004A2224</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RecordView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>274EEEA8152AB739004A2224</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RecordView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>274EEEA9152AB739004A2224</key>
+		<dict>
+			<key>fileRef</key>
+			<string>274EEEA8152AB739004A2224</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>274EEEAA152B4D26004A2224</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>RecordView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>274EEEAB152B4D26004A2224</key>
+		<dict>
+			<key>fileRef</key>
+			<string>274EEEAA152B4D26004A2224</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>275B8875153F2354004CFEBB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>matteStopButton.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>275B8876153F2354004CFEBB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>mattePlayButton.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>275B8877153F2354004CFEBB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>matteRecordIcon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>275B8878153F2354004CFEBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>275B8875153F2354004CFEBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>275B8879153F2354004CFEBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>275B8876153F2354004CFEBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>275B887A153F2354004CFEBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>275B8877153F2354004CFEBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>277B65D0150263B4007CD5C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2748BF4A1501B1CC0091BFCF</string>
+				<string>27D23BF4151E5AE0005A7A77</string>
+				<string>27D23BF5151E5AE0005A7A77</string>
+				<string>27FDDDBD154C3D3400B6FA0D</string>
+				<string>27FDDDBE154C3D3400B6FA0D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CoreData</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>277B65E7150267DB007CD5C9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MainMenuViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>277B65E8150267DB007CD5C9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MainMenuViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>277B65E9150267DB007CD5C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>277B65E8150267DB007CD5C9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2797FCF315466258007F0D16</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Tunepad Icon.png</string>
+			<key>path</key>
+			<string>../Tunepad Icon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2797FCF415466258007F0D16</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2797FCF315466258007F0D16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27AE87331516A161004A817E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>EditViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27AE87341516A161004A817E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>EditViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27AE87351516A162004A817E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27AE87341516A161004A817E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27C08879154B4F520078DAB1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>parchment.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27C0887A154B4F520078DAB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27C08879154B4F520078DAB1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27D23BF4151E5AE0005A7A77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SongSection.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27D23BF5151E5AE0005A7A77</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SongSection.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27D23BF6151E5AE0005A7A77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27D23BF5151E5AE0005A7A77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27FDDDBD154C3D3400B6FA0D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Song.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>27FDDDBE154C3D3400B6FA0D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Song.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>27FDDDBF154C3D3400B6FA0D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27FDDDBE154C3D3400B6FA0D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>31266847D049ACABA0467F72</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TunePad Pro.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3DAF875DA131A0C4FD621B2D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TunePad Pro.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TunePad Pro/Pods-TunePad Pro.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42F6C879BE2FADC32355E0DE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31266847D049ACABA0467F72</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>940BCD9B21EA282030551BBA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TunePad Pro.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TunePad Pro/Pods-TunePad Pro.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B0BEB0CAF49B7B7F8203AD5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TunePad Pro/Pods-TunePad Pro-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9B4CEBB9613103156F4EF75F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>ADE86DC4B92EAF59BF44080F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3DAF875DA131A0C4FD621B2D</string>
+				<string>940BCD9B21EA282030551BBA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>2748BF231501B1CC0091BFCF</string>
+</dict>
+</plist>

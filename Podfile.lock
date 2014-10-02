@@ -1,0 +1,10 @@
+PODS:
+  - SCSiriWaveformView (1.0.1)
+
+DEPENDENCIES:
+  - SCSiriWaveformView
+
+SPEC CHECKSUMS:
+  SCSiriWaveformView: e0d1a769e396a7c1a0bb05e02b539af2c484c56d
+
+COCOAPODS: 0.34.1
